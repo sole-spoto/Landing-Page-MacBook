@@ -46,6 +46,7 @@ main {
 main .animation{
     display: flex; 
     justify-content: center;
+    transition: opacity 0.1s;
 }
 main .animation .computer{
     object-fit: cover; 
@@ -57,29 +58,38 @@ main .animation .computer{
 
 /* Estilo del texto */
 main .text{
+    position: relative;
+    top: -150px;
     display: flex; 
     flex-direction: column;
     align-items: center;
     color: #fff;
+    opacity: 0;
 }
 main .text h2{
     font-size: 32px;
     font-weight: 500;
 }
+
 main .text h1{
     font-size: 96px;
     font-weight: 700;
+    line-height: 1.04;
     width: 720px;
     text-align: center;
     margin: 20px;
+    background: -webkit-radial-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 main .text p{
     color: #a1a1a6;
     font-size: 32px;
     font-weight: 500;
+    line-height: 1.25;
     text-align: center;
     width: 950px;
-    margin: 20px;
+    margin: 10px;
 }
 
 /* Especificaciones y precio */
@@ -87,10 +97,13 @@ main .text .specifications{
     flex-direction: row;
     font-size: 28px;
     font-weight: 500;
-    margin: 50px;
+    margin: 10px;
 }
 main .text .specifications img{
     width: 96;
+    position: relative;
+    top: 40px;
+    left: 35px;
 }
 main .text .specifications span{
     color: #a1a1a6;
@@ -105,6 +118,7 @@ main .text span{
 main .text .sp1{
     color: #a1a1a6;
     text-align: center;
+    font-size: 18px;
 }
 main .text .sp2{
     word-spacing: 5px;
@@ -116,3 +130,5 @@ main .text .sp3{
     font-size: 18px;
     margin: 0px;
 }
+
+/*Animaciones*/
